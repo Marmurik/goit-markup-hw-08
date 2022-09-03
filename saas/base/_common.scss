@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-three--);
+    background-color: var(--color-one--);
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .current-link {
+    color: var(--color-two--);
+  }

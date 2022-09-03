@@ -1,0 +1,27 @@
+.btn-design {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 500;
+    background: var(--color-five--);
+    color: var(--color-three--);
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 6px 22px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--color-one--);
+    background-color: var(--color-two--);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  }
+  }

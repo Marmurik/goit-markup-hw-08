@@ -1,0 +1,83 @@
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-page {
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .menu__text {
+    font-weight: 500;
+    @extend %font;
+    letter-spacing: 0.02em;
+  }
+
+  .logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+  .footer-menu__logo,
+  .web-logo {
+    color: var(--color-one--);
+  }
+  
+  .header-logo {
+    color: var(--color-three--);
+    margin-right: 93px;
+    align-items: center;
+  }
+  .menu__list {
+    @extend %flex;
+  }
+  
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .header-page {
+    column-gap: 30px;
+
+    & .container {
+      @extend %flex;
+    }
+  }
+  
+  .header-contacts__list {
+    margin-left: auto;
+
+    .header-page & {
+      display: flex;
+      column-gap: 50px;
+    }
+  }
+  
+  .header-contacts__item {
+    @extend %flex;
+    background-color:transparent;
+    justify-items: center;
+    fill: currentColor;
+
+    &:hover, 
+    &:focus {
+    background-color: var(--color-one--);
+    fill: var(--color-two--);
+  }
+  }
+  
+  .header-contacts__icon--right{
+    margin-right: 10px;
+  }
+  
+  .header-contacts__mail-design,
+  .header-contacts__tel-design {
+    @extend %flex;
+  }

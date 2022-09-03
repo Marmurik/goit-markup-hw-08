@@ -1,0 +1,55 @@
+.modal-window {
+  width: 528px;
+  background-color: var(--color-one--);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 400ms linear, height 500ms linear;
+  padding: 40px;
+  
+  .backdrop.is-hidden & {
+    transform: translate(-50%,-50%) scale(0) rotate(-180deg);
+    transition: transform 400ms linear;
+  }
+}
+    
+    .modal-button {
+      @extend %flex;
+      justify-content: center;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: var(--color-one--);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+      &:hover,
+      &:focus {
+        fill: var(--color-two--);
+      }
+    }
+    
+    .modal-icon {
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+    .modal-title{
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--color-three--);
+      display: block;
+      text-align: center;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
