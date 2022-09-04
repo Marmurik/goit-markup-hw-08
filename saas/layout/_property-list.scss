@@ -25,6 +25,11 @@
     @include mobile {
       display: block;
     }
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+    }
     @include desktop {
      display: flex;
      column-gap: 30px;
@@ -35,6 +40,10 @@
       @include mobile {
         width: 100%;
         margin-top: 30px;
+      }
+      @include tablet {
+        width: calc((100% - 30px) /2 );
+        margin-top: 0px;
       }
       @include desktop {
        width: calc((100% - 90px) / 4);
@@ -48,6 +57,9 @@
     @include mobile {
       margin-top: 0px;
       text-align: center;
+    }
+    @include tablet {
+      text-align: left;
     }
   }
   &__title--down-position{
@@ -78,6 +90,7 @@
     }
     @include tablet {
       width: 354px;
+  
     }
 
     @include desktop {
@@ -90,5 +103,9 @@
         margin-top: 0px;
     }
   }
-  
+  @include tablet {
+    .properties__item:nth-child(n + 3) {
+      margin-top: 30px;
+    }
+  }
   
