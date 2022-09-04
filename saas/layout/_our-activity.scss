@@ -1,6 +1,13 @@
 .activity {
+  visibility: hidden;
     padding-bottom: 94px;
 
+    @include tablet {
+      visibility: hidden;
+    }
+    @include desktop {
+      visibility: visible;
+    }
     &__list {
       display: flex;
       column-gap: 30px;

@@ -382,7 +382,18 @@ img {
   }
 }
 .activity {
+  visibility: hidden;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 768px) {
+  .activity {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity {
+    visibility: visible;
+  }
 }
 .activity__list {
   display: flex;
