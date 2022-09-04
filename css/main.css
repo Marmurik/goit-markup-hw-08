@@ -44,6 +44,7 @@ ul {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -53,6 +54,7 @@ img {
 }
 
 .container {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -272,21 +274,47 @@ img {
 }
 
 .properties {
-  padding-top: 57px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
 }
-.properties__list {
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+@media screen and (min-width: 1200px) {
+  .properties {
+    padding-top: 57px;
+    padding-bottom: 94px;
+  }
 }
-.properties__list .properties__item {
-  width: calc((100% - 90px) / 4);
-  justify-content: center;
+@media screen and (min-width: 480px) {
+  .properties__list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .properties__list {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .properties__list .properties__item {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .properties__list .properties__item {
+    width: calc((100% - 90px) / 4);
+    justify-content: center;
+  }
 }
 .properties__title {
   font-weight: 700;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .properties__title {
+    margin-top: 0px;
+    text-align: center;
+  }
 }
 .properties__title--down-position {
   margin-bottom: 10px;
@@ -296,8 +324,8 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--color-four--);
-  margin-bottom: 0;
   margin-top: 0;
+  margin-bottom: 0px;
 }
 .properties__icon {
   margin-bottom: 30px;
@@ -306,10 +334,29 @@ img {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  width: 270px;
   height: 120px;
 }
+@media screen and (min-width: 480px) {
+  .properties {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .properties {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .properties {
+    width: 270px;
+  }
+}
 
+@media screen and (min-width: 480px) {
+  .properties__item:first-child {
+    margin-top: 0px;
+  }
+}
 .activity {
   padding-bottom: 94px;
 }
