@@ -893,6 +893,7 @@ img {
     flex-wrap: wrap;
     -moz-column-gap: 30px;
          column-gap: 30px;
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -904,7 +905,9 @@ img {
 }
 
 .project-example__link {
-  display: block;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 .project-example__link:hover .project-slider-text, .project-example__link:focus .project-slider-text {
   transform: translateY(0);
@@ -957,6 +960,7 @@ img {
   border-left: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 .project-example__item .project-text {
   font-size: 16px;
