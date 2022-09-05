@@ -909,7 +909,7 @@ img {
   height: 100%;
   flex-direction: column;
 }
-.project-example__link:hover .project-slider-text, .project-example__link:focus .project-slider-text {
+.project-example__link:hover .project-slider__text, .project-example__link:focus .project-slider__text {
   transform: translateY(0);
 }
 

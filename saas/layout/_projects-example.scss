@@ -59,8 +59,8 @@
   height: 100%;
   flex-direction: column;
 
-  &:hover .project-slider-text, 
-  &:focus .project-slider-text {
+  &:hover .project-slider__text, 
+  &:focus .project-slider__text {
   transform: translateY(0);
 }
 }
