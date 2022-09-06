@@ -1,5 +1,13 @@
-.socials-section{
-  width: 206px;
+.socials-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+
+  @include desktop {
+    width: 206px;
+    margin-top: 0px;
+  }
+
  
  &__title {
     font-family: inherit;

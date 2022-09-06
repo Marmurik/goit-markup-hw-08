@@ -3,12 +3,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-section{
-  @extend %flex;
+.footer-section {
+  display: block;
+  text-align: center;
+
+
+@include desktop {
+  display: flex;
+  align-items: cente;
   align-items: baseline;
   gap: 70px;
+}  
 }
 
+.footer-menu {
+  @include desktop {
+    text-align: left;
+  }
+  
+}
 .footer-address__item:not(:last-child) {
   margin-top: 0px;
   margin-bottom: 9px;
