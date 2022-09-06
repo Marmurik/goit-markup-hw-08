@@ -16,6 +16,22 @@
 }  
 }
 
+.tablet {
+
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    
+  }
+  @include desktop {
+    display: flex;
+    width: 100%;
+    gap: 70px;
+  }
+  
+}
+
 .footer-menu {
   @include desktop {
     text-align: left;
