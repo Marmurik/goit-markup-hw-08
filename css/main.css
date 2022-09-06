@@ -668,14 +668,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .tablet {
+  .footer-design__tablet {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
-  .tablet {
+  .footer-design__tablet {
     display: flex;
     width: 100%;
     gap: 70px;
@@ -899,7 +899,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   justify-content: center;
-  padding-left: 28px;
+  padding-left: 6px;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
@@ -920,7 +920,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
     justify-content: center;
-    padding-left: 28px;
+    padding-left: 6px;
     cursor: pointer;
     margin-top: 0px;
   }
