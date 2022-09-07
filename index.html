@@ -19,11 +19,10 @@
   </head>
   <body>
     <!--header-->
-    <!-- <header class="header-page">
+    <header class="header-page">
       <div class="container">
         <a href="./index.html" class="logo header-logo"
-          ><span class="web-logo">Web</span>Studio</a
-        >
+          ><span class="web-logo">Web</span>Studio</a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -54,24 +53,74 @@
               <svg class="header-contacts__icon header-contacts__icon--right" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
+        <button type="button" class="menu-button-open" data-menu-open>
+          <svg width="24" height="16">
+            <use href="./img/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+      <button type="button" class="menu-button-close menu-button" data-menu-close>
+        <svg width="18.67" height="18.67">
+          <use href="./img/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <nav class="mob-menu__navigation">
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a href="./index.html" class="mob-menu__link mob-menu__text menu__link">Студія</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="./portfolio.html" class="mob-menu__link mob-menu__text menu__link">Портфоліо</a>
+          </li>
+          <li class="mob-menu__item">
+            <a href="#" class="mob-menu__link mob-menu__text menu__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mob-connect">
+      <ul class="mob-connect__list">
+        <li class="mob-connect__item">
+          <a href="tel:+380961111111" class="header-contacts__tel-design mob-connect__text">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="mob-connect__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="header-contacts__mail-design mob-connect__text mob-connect__text--mail">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mob-socnet">
+      <ul class="mob-socnet__list">
+        <li class="mob-socnet__item"> 
+        <a href="#" class="mob-socnet__text">Instagram</a></li>
+        <li class="mob-socnet__item">
+        <a href="#" class="mob-socnet__text">Twitter</a></li>
+        <li class="mob-socnet__item">
+        <a href="#" class="mob-socnet__text">Facebook</a></li>
+        <li class="mob-socnet__item">
+        <a href="#" class="mob-socnet__text">Linkedin</a></li>
+      </ul>
+      </div>
+      </div>
+    </header>
     <main>
       <!--section heroe-->
-      <!-- <section class="heroe-section">
+       <section class="heroe-section">
         <div class="heroe-section__container container">
           <h1 class="heroe-section__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="heroe-section__button heroe-section__button--top" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!--Чим ми займаємося-->
-      <!-- <section class="properties">
+      <section class="properties">
         <div class="container">
           <h2 class="visual-hidden">Наші особливості</h2>
           <ul class="properties__list">
@@ -122,8 +171,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="activity">
+      </section>
+      <section class="activity">
         <div class="container">
           <h2 class="activity__title activity__title--position">Чим ми займаємося</h2>
           <ul class="activity__list">
@@ -146,9 +195,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Команда-->
-      <!-- <section class="team-section">
+      <section class="team-section">
         <div class="container">
           <h2 class="team-section__title team-section__title--position">Наша команда</h2>
           <ul class="team__list">
@@ -302,9 +351,9 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section> 
       <!--Постійний клієнти-->
-      <!-- <section class="our-clients">
+      <section class="our-clients">
         <div class="container">
           <h2 class="our-clients_title our-clients_title--position">Постійні клієнти</h2>
           <ul class="our-clients__list">
@@ -352,7 +401,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!--Футер-->
     <footer class="footer-design">
@@ -515,5 +564,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

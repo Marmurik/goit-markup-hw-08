@@ -1,12 +1,12 @@
 .activity {
-  visibility: hidden;
-    padding-bottom: 94px;
+  display: none;
+    padding-bottom: 0px;
 
     @include tablet {
-      visibility: hidden;
+      display: flex;
     }
     @include desktop {
-      visibility: visible;
+      display: flex;
     }
     &__list {
       display: flex;

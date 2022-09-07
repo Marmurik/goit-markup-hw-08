@@ -1,12 +1,21 @@
 
-  .header-page {
+.header-page {
     height: 80px;
     border-bottom: 1px solid #ececec;
     padding-top: 24px;
     padding-bottom: 24px;
+ }
+ 
+  .menu {
+    display: none;
   }
+
   
-  .menu__text {
+.menu-button-open {
+  margin-left: auto;
+}
+  
+ .menu__text {
     font-weight: 500;
     @extend %font;
     letter-spacing: 0.02em;
@@ -47,12 +56,19 @@
   
   .header-contacts__list {
     margin-left: auto;
+    display: none;
+
 
     .header-page & {
       display: flex;
       column-gap: 50px;
     }
   }
+
+  .header-page .header-contacts__list {
+    display: none;
+  }
+  
   
   .header-contacts__item {
     @extend %flex;
@@ -75,3 +91,97 @@
   .header-contacts__tel-design {
     @extend %flex;
   }
+
+  .mob-menu {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 21px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    }
+
+  .menu-button-open {
+    display: block;
+    margin-left: auto;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-color: transparent;
+  }
+   .menu-button-close {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-color: transparent;
+  }
+
+  .mob-menu__navigation {
+    display: block;
+  }
+  .mob-menu__list {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: var(--color-three--);
+    margin-bottom: 302px;
+  }
+
+  .mob-menu__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  
+  .mob-connect {
+    display: block;
+    margin-bottom: 64px;
+  }
+
+  .mob-connect__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+
+  .mob-connect__text {
+  //  font-family: inherit;
+   font-size: 34px;
+   font-weight: 500;
+   line-height: 1.17;
+   color: var(--color-two--);
+   text-decoration: none;
+  }
+
+  .mob-connect__text--mail {
+  //  font-family: inherit;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 1.17;
+   text-decoration: none;
+   color: var(--color-four--);
+  }
+
+  .mob-socnet {
+    display: flex;
+}
+.mob-socnet__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-two--);
+  text-decoration: none;
+}
+
+.mob-socnet__list {
+  display: inline-flex;
+  margin-right: 83px;
+  gap: 20px;
+}
+
+.mob-socnet__item:not(:last-child){
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+padding-right: 10px;
+}
+  

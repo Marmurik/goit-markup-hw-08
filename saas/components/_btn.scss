@@ -25,3 +25,7 @@
   border-radius: 4px;
   }
   }
+
+  .menu-button-close:hover, .menu-button-close:focus {
+    fill: var(--color-two--);
+  }
