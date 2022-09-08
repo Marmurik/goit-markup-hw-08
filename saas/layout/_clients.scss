@@ -20,10 +20,13 @@ margin-top: 0px;
 
 
 @include desktop {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 36px;
  line-height: 1.16;
 }
 }
+
 
 .our-clients__title--position {
   
