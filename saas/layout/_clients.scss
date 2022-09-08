@@ -38,7 +38,7 @@ margin-top: 0px;
 .our-clients__list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
+    gap: 30px;
     justify-content: center;
     margin-top: 30px;
 
@@ -51,7 +51,7 @@ margin-top: 0px;
 .our-clients__item {
   @include mobile {
     width: calc((100% - 30px) /2 );
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   @include tablet {
     width: calc((100% - 60px) /3 );

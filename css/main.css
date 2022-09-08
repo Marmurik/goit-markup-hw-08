@@ -705,8 +705,7 @@ img {
 .our-clients__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  gap: 30px;
   justify-content: center;
   margin-top: 30px;
 }
@@ -721,7 +720,7 @@ img {
 @media screen and (min-width: 480px) {
   .our-clients__item {
     width: calc((100% - 30px) / 2);
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) {
