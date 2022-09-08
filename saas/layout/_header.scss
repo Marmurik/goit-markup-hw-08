@@ -8,6 +8,13 @@
  
   .menu {
     display: none;
+
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: block;
+    }
   }
 
   
@@ -58,7 +65,6 @@
     margin-left: auto;
     display: none;
 
-
     .header-page & {
       display: flex;
       column-gap: 50px;
@@ -67,14 +73,22 @@
 
   .header-page .header-contacts__list {
     display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    @include desktop {
+      display: flex;
+    }
   }
-  
   
   .header-contacts__item {
     @extend %flex;
     background-color:transparent;
     justify-items: center;
     fill: currentColor;
+    margin-bottom: 10px;
 
     &:hover, 
     &:focus {
@@ -111,6 +125,14 @@
     background-color: #ffffff;
     margin-right: 10px;
     border-color: transparent;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
   }
    .menu-button-close {
     display: block;
