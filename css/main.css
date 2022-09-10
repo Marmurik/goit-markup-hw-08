@@ -349,6 +349,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .heroe-section {
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heroe-img/header-desk.jpg);
@@ -767,10 +768,12 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .our-clients .our-clients__title {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-family: inherit;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.17;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 .our-clients .our-clients__title--position {

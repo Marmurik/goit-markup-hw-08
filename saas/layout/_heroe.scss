@@ -46,6 +46,7 @@
 }
 .heroe-section {
   @include desktop {
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0px;
     background-image: linear-gradient(
