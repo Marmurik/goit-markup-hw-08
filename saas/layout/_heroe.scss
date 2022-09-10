@@ -75,26 +75,33 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-one--);
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
   margin-top: 0px;
 
   @include tablet {
+    width: 360px;
     font-size: 26px;
     line-height: 1.36;
     margin-bottom: 30px;
     margin-top: 0px;
-    padding-left: 204px;
-    padding-right: 204px;
+    margin-left:auto;
+    margin-right: auto;
+    // padding-left: 204px;
+    // padding-right: 204px;
   }
 
     @include desktop {
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
     margin-bottom: 30px;
     margin-top: 0px;
-    padding-left: 204px;
-    padding-right: 204px;
+    // padding-left: 204px;
+    // padding-right: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     }
   }
 
