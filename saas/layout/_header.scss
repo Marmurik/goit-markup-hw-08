@@ -1,6 +1,6 @@
 
 .header-page {
-    height: 80px;
+    // height: 80px;
     border-bottom: 1px solid #ececec;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -88,13 +88,21 @@
     background-color:transparent;
     justify-items: center;
     fill: currentColor;
-    margin-bottom: 10px;
 
     &:hover, 
     &:focus {
     background-color: var(--color-one--);
     fill: var(--color-two--);
   }
+  }
+
+
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include desktop {
+      margin-bottom: 0px;
+    }
   }
   
   .header-contacts__icon--right{
@@ -207,3 +215,9 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
 padding-right: 10px;
 }
   
+.mob-connect__text--mail:hover,
+.mob-connect__text--mail:hover,
+.menu-button-open:hover,
+.menu-button-open:focus {
+  color: var(--color-two--);
+}

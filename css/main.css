@@ -77,7 +77,6 @@ img {
 }
 
 .header-page {
-  height: 80px;
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -161,11 +160,19 @@ img {
   background-color: transparent;
   justify-items: center;
   fill: currentColor;
-  margin-bottom: 10px;
 }
 .header-contacts__item:hover, .header-contacts__item:focus {
   background-color: var(--color-one--);
   fill: var(--color-two--);
+}
+
+.header-contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .header-contacts__icon--right {
@@ -275,6 +282,13 @@ img {
   padding-right: 10px;
 }
 
+.mob-connect__text--mail:hover,
+.mob-connect__text--mail:hover,
+.menu-button-open:hover,
+.menu-button-open:focus {
+  color: var(--color-two--);
+}
+
 .link-design {
   color: var(--color-four--);
   text-decoration: none;
@@ -337,6 +351,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .heroe-section {
+    max-width: 768px;
     padding: 118px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heroe-img/header-tab.jpg);
   }
@@ -463,6 +478,7 @@ img {
     padding-bottom: 94px;
   }
 }
+
 @media screen and (min-width: 480px) {
   .properties__list {
     display: block;
@@ -487,6 +503,7 @@ img {
     padding-bottom: 0px;
   }
 }
+
 @media screen and (min-width: 480px) {
   .properties__list .properties__item {
     width: 100%;
@@ -505,6 +522,7 @@ img {
     justify-content: center;
   }
 }
+
 .properties__title {
   font-weight: 700;
   text-transform: uppercase;
@@ -520,9 +538,11 @@ img {
     text-align: left;
   }
 }
+
 .properties__title--down-position {
   margin-bottom: 10px;
 }
+
 .properties__text {
   font-weight: 400;
   font-size: 14px;
@@ -531,6 +551,7 @@ img {
   margin-top: 0;
   margin-bottom: 0px;
 }
+
 .properties__icon {
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -541,17 +562,17 @@ img {
   height: 120px;
 }
 @media screen and (min-width: 480px) {
-  .properties {
+  .properties__icon {
     width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .properties {
+  .properties__icon {
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .properties {
+  .properties__icon {
     width: 100%;
   }
 }
@@ -577,7 +598,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .activity {
-    display: flex;
+    display: none;
+    padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -768,12 +790,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .our-clients .our-clients__title {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    margin-bottom: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 .our-clients .our-clients__title--position {
@@ -1132,8 +1152,7 @@ img {
   padding: 6px 22px;
   display: inline-block;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-design:hover, .btn-design:focus {
   color: var(--color-one--);
@@ -1211,6 +1230,7 @@ img {
   display: flex;
   height: 100%;
   flex-direction: column;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-example__link:hover .project-slider__text, .project-example__link:focus .project-slider__text {
   transform: translateY(0);
@@ -1236,6 +1256,10 @@ img {
   .project-example__item:hover, .project-example__item:focus .project-slider__text {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1x 4px 6px rgba(0, 0, 0, 0.16);
   }
+}
+.project-example__item .project-example__link:hover,
+.project-example__item .project-example__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-example__item .project-slider {
   position: relative;

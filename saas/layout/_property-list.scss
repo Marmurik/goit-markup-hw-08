@@ -21,6 +21,7 @@
 
     @include tablet {
       display: inline-block;
+      // width: 100%;
     }
     
     @include desktop {
@@ -29,8 +30,9 @@
       padding-bottom: 94px;
       
     }
+  }    
 
-  &__list {
+  .properties__list {
     @include mobile {
       display: block;
       padding-top: 60px;
@@ -48,7 +50,8 @@
       padding-bottom: 0px;
     }
     }
-    &__list .properties__item {
+
+    .properties__list .properties__item {
       
       @include mobile {
         width: 100%;
@@ -63,7 +66,7 @@
        justify-content: center;
       }
     }
-    &__title {
+    .properties__title {
     font-weight: 700;
     @extend %font;
     text-transform: uppercase;
@@ -75,10 +78,10 @@
       text-align: left;
     }
   }
-  &__title--down-position{
+  .properties__title--down-position{
     margin-bottom: 10px;
   } 
-  &__text {
+  .properties__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -88,7 +91,7 @@
 
   }
 
-  &__icon {
+  .properties__icon {
     margin-bottom: 30px;
     background-color:#F5F4FA; 
     border-radius: 4px;
@@ -97,13 +100,12 @@
     margin-right: auto;
     justify-content: center;
     height: 120px;
-  }
+
     @include mobile {
       width: 450px;
     }
     @include tablet {
       width: 354px;
-  
     }
 
     @include desktop {
